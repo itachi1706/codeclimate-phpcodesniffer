@@ -1,5 +1,12 @@
 # Code Climate PHP_CodeSniffer Engine
 
+### Additional Steps from original  
+
+1. Make sure codeclimate has been installed completely
+2. Clone this repo and enter it
+3. Execute `docker build -t codeclimate/codeclimate-phpcodesniffer .`
+4. Update the standard in your .codeclimate.config and add `moodle` into it
+
 `codeclimate-phpcodesniffer` is a Code Climate engine that wraps the [PHP_Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) static analysis tool. You can run it on your command line using the Code Climate CLI, or on our hosted analysis platform.
 
 PHP_CodeSniffer helps you detect violations of a defined coding standard.
