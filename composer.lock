@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3db621d30baff45a220fd5833c176980",
-    "content-hash": "bc862b5962296c0df3108a6dfff8d6f8",
+    "hash": "d8ad2b4f464eeae7c2fe754c12f08bce",
+    "content-hash": "10dd46babc49aca491eed53dee070d9b",
     "packages": [
         {
             "name": "barracudanetworks/forkdaemon-php",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barracudanetworks/forkdaemon-php.git",
-                "reference": "1251138c17fe0fc76e87a991a3dbf2de022589db"
+                "reference": "9f9402909a4bd1ac98e5aacb6f15f19056f591f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barracudanetworks/forkdaemon-php/zipball/1251138c17fe0fc76e87a991a3dbf2de022589db",
-                "reference": "1251138c17fe0fc76e87a991a3dbf2de022589db",
+                "url": "https://api.github.com/repos/barracudanetworks/forkdaemon-php/zipball/9f9402909a4bd1ac98e5aacb6f15f19056f591f6",
+                "reference": "9f9402909a4bd1ac98e5aacb6f15f19056f591f6",
                 "shasum": ""
             },
             "require": {
@@ -41,25 +41,25 @@
                 "forking",
                 "php"
             ],
-            "time": "2015-11-11 16:17:56"
+            "time": "2016-01-12 19:40:56"
         },
         {
             "name": "danielstjules/stringy",
-            "version": "2.1.0",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "efb10020f6f0274bd3c43a1549f37535e0a9d1cc"
+                "reference": "4e214a5195fae3fb558e81b1c6010678f7600643"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/efb10020f6f0274bd3c43a1549f37535e0a9d1cc",
-                "reference": "efb10020f6f0274bd3c43a1549f37535e0a9d1cc",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/4e214a5195fae3fb558e81b1c6010678f7600643",
+                "reference": "4e214a5195fae3fb558e81b1c6010678f7600643",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3.0"
+                "php": ">=5.3.0",
+                "symfony/polyfill-mbstring": "~1.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
@@ -97,23 +97,54 @@
                 "utility",
                 "utils"
             ],
-            "time": "2015-09-03 06:50:48"
+            "time": "2016-05-02 15:18:10"
         },
         {
-            "name": "squizlabs/php_codesniffer",
-            "version": "2.5.0",
+            "name": "moodlerooms/moodle-coding-standard",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "e4fb41d5d0387d556e2c25534d630b3cce90ea67"
+                "url": "https://github.com/moodlerooms/moodle-coding-standard.git",
+                "reference": "0489c8f4391a0e1cb671f4ed8aed8f674bd6a126"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/e4fb41d5d0387d556e2c25534d630b3cce90ea67",
-                "reference": "e4fb41d5d0387d556e2c25534d630b3cce90ea67",
+                "url": "https://api.github.com/repos/moodlerooms/moodle-coding-standard/zipball/0489c8f4391a0e1cb671f4ed8aed8f674bd6a126",
+                "reference": "0489c8f4391a0e1cb671f4ed8aed8f674bd6a126",
                 "shasum": ""
             },
             "require": {
+                "php": ">=5.4.0",
+                "squizlabs/php_codesniffer": "2.6.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "Moodle CodeSniffer Standards",
+            "keywords": [
+                "codesniffer",
+                "moodle"
+            ],
+            "time": "2016-04-07 16:13:37"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "1bcdf03b068a530ac1962ce671dead356eeba43b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/1bcdf03b068a530ac1962ce671dead356eeba43b",
+                "reference": "1bcdf03b068a530ac1962ce671dead356eeba43b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
                 "php": ">=5.1.2"
@@ -128,7 +159,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -174,7 +205,66 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2015-12-11 00:12:46"
+            "time": "2016-04-03 22:58:34"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-05-18 14:26:46"
         }
     ],
     "packages-dev": [],
